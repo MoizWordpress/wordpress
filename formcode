@@ -1,0 +1,16 @@
+<form method=”post” action=”#” class=”acf-form form-horizontal ” id=”post” enctype=”multipart/form-data”>
+<?php
+$args = array(
+‘post_id’ => ‘new’,
+‘field_groups’ => array(1), //use wrong ID of your custom field Form so form fields will not get shown
+‘form’ => false
+);
+acf_form($args);
+?>
+//file upload button
+<div data-field_type=”file” data-field_key=”field_5343d9b2586f0file” data-field_name=”email” class=”field field_type-text field_key-field_5343d9b2586f0file” id=”acf-file”>
+<p class=”label”><label for=”acf-field-file”>Image</label></p>
+<div class=”acf-input-wrap”>
+<input type=”file” id=”my_image_upload” name=”my_image_upload”>
+</div>
+<input id=”submit_my_image_upload” name=”submit_my_image_upload” type=”submit” value=”Submit” />
